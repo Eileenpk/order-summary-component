@@ -1,0 +1,209 @@
+/* Universal styles  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+:root {
+    font-size: 16px;
+    --main-color: #e0e8ff;
+    --second-color:  #fff;
+    --third-color: #382AE1;
+    --font-color: #717FA6;
+    --heading-color: #1F2E55;
+    --font-family: 'Red Hat Display', sans-serif;
+}
+
+/* main content  */
+
+body {
+    height: 100vh;
+    background: url(./images/pattern-background-mobile.svg), var(--main-color);
+    background-size: 100vw 50vh;
+    background-repeat: no-repeat;
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--second-color);
+    width: 90vw;
+    max-width: 20.4375rem;
+    height: 34.75rem;
+    border-radius: 1.25rem;
+    text-align: center;
+}
+
+.price  {
+    font-size: 0.875rem;
+}
+
+.plan-type {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem 1rem;
+    width: 17.4375rem;
+}
+
+.plan-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography  */
+
+h1, h2 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-weight: 900;
+}
+
+h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.375rem;
+    line-height: 1.819375rem;
+}
+
+h2 {
+    font-size: 0.875rem;
+    line-height: 1.1575rem;
+}
+
+p {
+    color: var(--font-color);
+    font-weight: 500;
+    font-size: 0.9735rem;
+    line-height: 1.5625rem;
+}
+
+.main-text {
+    margin: 0 1.5rem;
+}
+
+/* Assets  */
+
+img {
+   max-width: 100%;
+}
+.hero {
+    background: url(./images/illustration-hero.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 10rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+button {
+    background-color: var(--third-color);
+    color: var(--second-color);
+    width: 17.4375rem;
+    height: 3.125rem;
+    border-radius: 0.6875rem;
+    border: none;
+    margin-bottom: 1.5rem;
+    font-weight: 900;
+    font-size: 0.9375rem;
+    line-height: 1.2406rem;
+    letter-spacing: 1px;
+}
+
+button:hover,
+button:active {
+    background-color: #766CF1;
+    cursor: pointer;
+}
+
+.change-plan {
+    color: var(--third-color);
+    font-weight: 700;
+    font-size: 0.8125rem;
+    line-height: 1.075rem;
+}
+
+.change-plan:hover,
+.change-plan:active {
+    color: #766CF1;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#cancel {
+    background-color: var(--second-color);
+    color: var(--font-color);
+    font-weight: 900;
+}
+
+#cancel:hover,
+#cancel:active {
+    cursor: pointer;
+    color: #1F2E55;
+}
+
+/* @media */
+
+@media (min-width: 375px) {
+    /* main content  */
+body {
+    height: 100vh;
+    background: url(./images/pattern-background-desktop.svg), var(--main-color);
+    background-size: 100vw 50vh;
+    background-repeat: no-repeat;
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--second-color);
+    max-width: 28.125rem;
+    height: 43.5625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-top: 2.8125rem;
+    margin-bottom: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.plan-type {
+    margin-bottom: 2rem;
+    padding: 1.5625rem;
+}
+
+.plan-info {
+    margin-left: 1.25rem;
+    margin-right: 4.875rem;
+}
+
+.hero {
+    height: 13.75rem;
+    background-position: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-bottom: 2rem;
+}
+
+}
