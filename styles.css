@@ -189,7 +189,11 @@ p {
 
 .plan-info {
     margin-left: 1.25rem;
-    margin-right: 4.875rem;
+    margin-right: 5.875rem;
+}
+
+h2 {
+    width: 7.3125rem;
 }
 
 .hero {
