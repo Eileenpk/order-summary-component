@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screen shot of full screen webpage](https://github.com/Eileenpk/order-summary-component/blob/main/images/Screenshot-website.png)
+![screen shot of full screen webpage](https://github.com/Eileenpk/order-summary-component/blob/main/images/Screenshot-full-website.png)
 ![screen shot of mobile webpage](https://github.com/Eileenpk/order-summary-component/blob/main/images/Screenshot-mobile.png)
 ### Links
 
